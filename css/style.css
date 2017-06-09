@@ -50,6 +50,7 @@ header h1 {
 
 #weather {
 	display:none;
+	padding-bottom: 50px;
 }
 
 .convert {
@@ -101,9 +102,6 @@ header h1 {
 	padding-right: 3%;
 }
 
-#current {
-	position: relative;
-}
 
 footer {
 	background: black;
