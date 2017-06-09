@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Local Weather Report</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,11 +14,14 @@
 		<img src="img/weather.ico" id="weather-icon">
 		</div>
 	</header>
+
+
 	<div id="fetch_data">
 		<p>
 			Fetching  weather data <span id="loading">.</span>
 		</p>
 	</div>
+
 
 	<div class="container-fluid" id="weather">
 		<div class="row">
@@ -54,10 +59,6 @@
 								<p class="timezone">
 									TimeZone : <span class="timezone_value"></span>
 								</p>
-
-								<div class="DarkSkyLink text-center">
-									<a href="#">Powered by Dark Sky</a>
-								</div>
 					</div>
 					<div id="daily" class="tab-pane" role="tabpanel">
 						<ul class="nav nav-tabs nav-justified tab-panel" id="daily-panel">
@@ -67,7 +68,7 @@
 							<li class="nav-item"><a href="#wednesday" data-toggle="tab">W</a></li>
 							<li class="nav-item"><a href="#thursday" data-toggle="tab">T</a></li>
 							<li class="nav-item"><a href="#friday" data-toggle="tab">F</a></li>
-							<li class="nav-item"><a href="#satday" data-toggle="tab">S</a></li>
+							<li class="nav-item"><a href="#saturday" data-toggle="tab">S</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="sunday" class="tab-pane active">
@@ -168,13 +169,16 @@
 									Average Humidity : <span class="humidity_value"></span>
 								</p>
 							</div>
-
-						</div>
+							</div>
 					</div>
 				</div>
 				</div>
 		</div>
 	</div>
+
+	<footer>
+		<h3 class="text-center" id="darkskylink"><a href="https://darksky.net/poweredby/" target="_blank">Powered By Dark Sky</a></h3>
+	</footer>
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>

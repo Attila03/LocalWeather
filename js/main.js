@@ -42,7 +42,7 @@ function fillDayData(day, dayData){
 
 function getWeather(coordinates){
 	var weatherAPIKey = "a85838678a70f528a5a7e69c73908506";
-	var weatherurl = "https://crossorigin.me/https://api.darksky.net/forecast/"
+	var weatherurl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"
 	$.ajax({
 		method: "GET",
 		url: weatherurl + weatherAPIKey + "/" + coordinates[0] + "," + coordinates[1] + "?units=si",
