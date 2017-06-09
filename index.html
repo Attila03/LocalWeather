@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Weather Report</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class=text-center>
+		<h1>Local Weather App</h1>
+		<img src="img/weather.ico" id="weather-icon">
+		</div>
+	</header>
+	<div id="fetch_data">
+		<p>
+			Fetching  weather data <span id="loading">.</span>
+		</p>
+	</div>
+
+	<div class="container-fluid" id="weather">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+				<ul class="nav nav-tabs nav-justified tab-panel" role="tablist">
+						<li class="nav-item"><a class="nav-link" href="#daily" role="tab" data-toggle="tab">Over the week</a></li>
+						<li class="nav-item"><a class="nav-link active" href="#current" role="tab" data-toggle="tab">Current</a></li>
+						<li class="nav-item"><a class="nav-link" href="#hourly" role="tab" data-toggle="tab">Over 2 days</a></li>
+				</ul>
+			</div>
+		</div>		
+		<div class="row">	
+			<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">	
+				<div class="tab-content" id="main-content">
+					<div id="current" class="tab-pane active" role="tabpanel">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="time text-right">
+									Time: <span class="time_value"></span>
+								</p>
+								<p class="temperature">
+									Temperature :  <span class="temperature_value"></span> &deg; 
+									<button type="button" class="convert" title="Toggle Celsius/Fahrenheit">C</button>
+								</p>	
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Humidity : <span class="humidity_value"></span>
+								</p>
+								<p class="timezone">
+									TimeZone : <span class="timezone_value"></span>
+								</p>
+
+								<div class="DarkSkyLink text-center">
+									<a href="#">Powered by Dark Sky</a>
+								</div>
+					</div>
+					<div id="daily" class="tab-pane" role="tabpanel">
+						<ul class="nav nav-tabs nav-justified tab-panel" id="daily-panel">
+							<li class="nav-item"><a href="#sunday" data-toggle="tab"data-toggle="tab">S</a></li>
+							<li class="nav-item"><a href="#monday" data-toggle="tab">M</a></li> 
+							<li class="nav-item"><a href="#tuesday" data-toggle="tab">T</a></li>
+							<li class="nav-item"><a href="#wednesday" data-toggle="tab">W</a></li>
+							<li class="nav-item"><a href="#thursday" data-toggle="tab">T</a></li>
+							<li class="nav-item"><a href="#friday" data-toggle="tab">F</a></li>
+							<li class="nav-item"><a href="#satday" data-toggle="tab">S</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="sunday" class="tab-pane active">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="monday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="tuesday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="wednesday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="thursday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="friday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+							<div id="saturday" class="tab-pane">
+								<p class="date text-right">
+									Date: <span class="date_value"></span>
+								</p>	
+								<p class="summary">
+									Summary : <span class="summary_value"></span>
+								</p>
+								<p class="pressure">
+									Average Pressure : <span class="pressure_value"></span> millibars
+								</p>
+								<p class="humidity">
+									Average Humidity : <span class="humidity_value"></span>
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

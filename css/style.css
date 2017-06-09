@@ -1,0 +1,110 @@
+body{
+	text-align: center;
+	background: url('../img/wind.jpg') no-repeat;
+	color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*HEADER*/
+header {
+	background:black;
+	opacity: 0.7;
+	color:green;
+	padding: 0px 5px 10px 5px ;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+header h1 {
+	margin-top: 0;
+	padding-top: 15px;
+	display: inline-block;
+}
+
+
+#weather-icon {
+	height: auto;
+	width: 50px;
+	position: relative;
+	bottom: 7px;
+	left: 1%;
+}
+
+/*END HEADER*/
+
+#fetch_data {
+	font-size: 1.1em;
+	background:white;
+	color:black;
+	opacity: 0.7;
+	padding: 10px 10px;
+	margin-left: 30%;
+	margin-right:30%;
+}
+
+#weather {
+	display:none;
+}
+
+button {
+	color:black;
+	background: white;
+	border: solid 2px crimson;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#temp_value {
+	padding: 5px;
+}
+
+.tab-content {
+	color: black;
+	padding-top: 20px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius: 10px;
+}
+
+#main-content {
+	background: white;
+	opacity: 0.8;
+	min-height: 250px;
+/*	max-height: 350px;
+	overflow-y: scroll;*/
+}
+
+.tab-panel {
+	background: black;
+	opacity: 0.8;
+	border-radius: 5px;
+	border: black;
+}
+
+#daily-panel {
+	background: black;
+	opacity: 0.9;
+}
+
+#daily {
+	margin-top: -21px;
+}
+
+
+.date_value, .time_value {
+	padding-right: 3%;
+}
+
+#current {
+	position: relative;
+}
+
+.DarkSkylink {
+	position: absolute;
+	bottom: 0;
+}
+
+
+
