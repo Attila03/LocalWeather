@@ -46,11 +46,12 @@ header h1 {
 	padding: 3vh 10px;
 	margin-left: 30%;
 	margin-right:30%;
+	display: none;
 }
 
 #weather {
-	display:none;
-	padding-bottom: 50px;
+/*	display:none;
+*/	padding-bottom: 50px;
 }
 
 .convert {
@@ -121,5 +122,20 @@ footer > h3 > a {
 }
 
 
+#daily-panel > li {
+	width: 14.285714%;
+	
+}
+
+
+#daily-panel > li > a {
+	padding: 10px 0;
+	margin: 0;
+	border: white;
+} 
+
+#main-panel > li > a {
+	margin: 0;
+}
 
 
