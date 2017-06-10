@@ -46,12 +46,11 @@ header h1 {
 	padding: 3vh 10px;
 	margin-left: 30%;
 	margin-right:30%;
-	display: none;
 }
 
 #weather {
-/*	display:none;
-*/	padding-bottom: 50px;
+	display:none;
+	padding-bottom: 50px;
 }
 
 .convert {
